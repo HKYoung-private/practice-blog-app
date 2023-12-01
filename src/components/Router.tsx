@@ -1,12 +1,12 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import { HomePage } from '../pages/home'
-import { PostListPage } from '../pages/posts'
-import { PostDetailPage } from '../pages/posts/detail'
-import { PostNewPage } from '../pages/posts/new'
-import { PostEditPage } from '../pages/posts/edit'
-import { ProfilePage } from '../pages/profile'
-import { LoginPage } from '../pages/login'
-import { SignUpPage } from '../pages/signup'
+import { HomePage } from 'pages/home'
+import { PostListPage } from 'pages/posts'
+import { PostDetailPage } from 'pages/posts/detail'
+import { PostNewPage } from 'pages/posts/new'
+import { PostEditPage } from 'pages/posts/edit'
+import { ProfilePage } from 'pages/profile'
+import { LoginPage } from 'pages/login'
+import { SignUpPage } from 'pages/signup'
 
 export const Router = () => {
   return (
