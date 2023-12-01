@@ -1,3 +1,3 @@
-export const PostEdit = () => {
+export const PostEditPage = () => {
   return <div>PostEdit</div>
 }

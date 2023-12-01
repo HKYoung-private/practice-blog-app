@@ -1,24 +1,24 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import { Home } from '../pages/home'
-import { PostList } from '../pages/posts'
-import { PostDetail } from '../pages/posts/detail'
-import { PostNew } from '../pages/posts/new'
-import { PostEdit } from '../pages/posts/edit'
-import { Profile } from '../pages/profile'
-import { Login } from '../pages/login'
-import { SignUp } from '../pages/signup'
+import { HomePage } from '../pages/home'
+import { PostListPage } from '../pages/posts'
+import { PostDetailPage } from '../pages/posts/detail'
+import { PostNewPage } from '../pages/posts/new'
+import { PostEditPage } from '../pages/posts/edit'
+import { ProfilePage } from '../pages/profile'
+import { LoginPage } from '../pages/login'
+import { SignUpPage } from '../pages/signup'
 
 export const Router = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/posts" element={<PostList />} />
-      <Route path="/posts/:id" element={<PostDetail />} />
-      <Route path="/posts/new" element={<PostNew />} />
-      <Route path="/posts/edit/:id" element={<PostEdit />} />
-      <Route path="/profile" element={<Profile />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/signup" element={<SignUp />} />
+      <Route path="/" element={<HomePage />} />
+      <Route path="/posts" element={<PostListPage />} />
+      <Route path="/posts/:id" element={<PostDetailPage />} />
+      <Route path="/posts/new" element={<PostNewPage />} />
+      <Route path="/posts/edit/:id" element={<PostEditPage />} />
+      <Route path="/profile" element={<ProfilePage />} />
+      <Route path="/login" element={<LoginPage />} />
+      <Route path="/signup" element={<SignUpPage />} />
       <Route path="*" element={<Navigate replace to="/" />} />
     </Routes>
   )
